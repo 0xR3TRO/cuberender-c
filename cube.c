@@ -28,6 +28,12 @@
  * ============================================================
  */
 
+/* usleep() is not part of ISO C; glibc declares it only with _DEFAULT_SOURCE
+   (newer GCC rejects the implicit declaration in -std=c11 mode). */
+#ifndef _DEFAULT_SOURCE
+#  define _DEFAULT_SOURCE
+#endif
+
 #include <math.h>
 #include <signal.h>
 #include <stdio.h>
