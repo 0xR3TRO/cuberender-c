@@ -1,5 +1,7 @@
 # CubeRender-C
 
+[![Build](https://github.com/0xR3TRO/cuberender-c/actions/workflows/build.yml/badge.svg)](https://github.com/0xR3TRO/cuberender-c/actions/workflows/build.yml)
+
 A terminal-based ASCII 3-D rotating cube renderer written in pure C.  
 No dependencies beyond the C standard library and `libm`.
 
@@ -168,7 +170,7 @@ A floating-point z-buffer (`1/z` per pixel) resolves face occlusion — only the
 ## Project Structure
 
 ```
-CubeRender-C/
+cuberender-c/
   cube.c          Main source — renderer, CLI parser, platform layer
   run.command     macOS / Linux double-click launcher (auto-compile + run)
   run.bat         Windows double-click launcher       (auto-compile + run)
@@ -184,4 +186,4 @@ CubeRender-C/
 ## License
 
 This project is licensed under the [MIT License](LICENSE).  
-© 2026 [0xRETRO](https://github.com/0xR3TRO)
+© 2026 [0xR3TRO](https://github.com/0xR3TRO)
